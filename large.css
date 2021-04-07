@@ -61,7 +61,7 @@ img {
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
     position: fixed;
-    top: 0;
+    /* top: 22.5px; */
     width: 100%;
   }
   
@@ -72,15 +72,16 @@ img {
 
 
      header {
-
         z-index: 1;
-    position: absolute;
-    /* top: 10px; */
-    margin-top: 25px;
+        position: absolute;
+        /* top: 10px; */
+        margin-top: 22.5px;
 
         width: 100%;
-        border-bottom: 1px solid rgb(0, 0, 0);
-        border-top: 1px solid black;
+        /* border-bottom: 1px solid rgb(0, 0, 0); */
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.507); */
+        /* border-top: 1px solid black; */
+        /* border-top: 1px solid rgba(255, 255, 255, 0.521); */
         /* margin-top: 1rem; */
         /* !!! */
         background-color: rgba(45, 45, 45, 0.163);
@@ -93,11 +94,13 @@ img {
         display: flex;
         align-items: flex-end;
         align-items: center;
+
         /* !!! */
         /* background-color: rgba(165, 77, 77, 0.231); */
+
         width: 80%;
         /* height: 3rem; */
-        height: 50px;
+        height: 45px;
         /* margin: .5rem auto; */
         margin-left: auto;
         margin-right: auto;
@@ -156,6 +159,7 @@ img {
         font-weight: 500;
         letter-spacing: .08rem;
         color: white;
+        /* color: black; */
     }
     
     .enzee--4 {
@@ -182,26 +186,53 @@ img {
     nav {
         /* background: rgb(191, 217, 137); */
         flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* overflow: visible; */
+        /* height: 40px; */
+        /* margin: 0px; */
+        /* box-sizing: border-box; */
     }
     
     .nav-links {
-        justify-content: space-around;
         list-style: none ;
-        border-left: 1px solid black;
+
+        /* border-left: 1px solid black;
         border-left: 1px solid rgba(255, 255, 255, 0.493);
         border-right: 1px solid black;
-        border-right: 1px solid rgba(255, 255, 255, 0.493);
+        border-right: 1px solid rgba(255, 255, 255, 0.493); */
+
         /* border-right: 1px solid black; */
+        /* border-bottom: 3px solid transparent; */
+        /* overflow: visible; */
     }
     
     .nav-link {
+        display: block;
+        float: left;
+        width: 130px;
+        text-align: center;
         text-decoration: none;
         color: black;
-        color: white;
-        letter-spacing: .08rem;
-        font-size: 18px;
+        color: rgba(255, 255, 255, 0.753);
+        letter-spacing: .04rem;
+        font-size: 15px;
         font-weight: 300;
+        margin-top: 18px;
+        padding: 0px 20px 12px 20px;
+        border-bottom: 4px solid transparent;
         /* border: 1px solid black; */
+    }
+
+    .nav-link.active {
+        border-bottom: 4px solid white;
+        color: white;
+    }
+
+    .nav-link:hover {
+        border-bottom: 4px solid white;
+        color: white;
     }
     
     .search-container {
@@ -216,9 +247,9 @@ img {
     
     
     input[type=text] {
-        width: 150px;
+        width: 200px;
         /* width: 100s%; */
-        height: 2rem;
+        height: 30px;
         outline: none;
         /* !!! ICON NOT VISIBLE !!! */
         background-image: url(images/search-icon.png); 
@@ -226,17 +257,19 @@ img {
         background-repeat: no-repeat; 
 
         background-color: transparent;
-        background-color: rgba(255, 255, 255, 0.336);
+        background-color: rgba(255, 255, 255, 0.349);
         /* background-color: wheat; */
         color: white;
     
-        font-size: 16px;
+        font-size: 15px;
         margin-right: .5rem;
-        padding-left: 2.5rem;
+        padding-left: 3.75rem;
         /* border-radius: .2rem; */
-        border: 1px solid black;
+        /* border: 1px solid black; */
+        /* border: 1px solid rgba(255, 255, 255, 0.199); */
+        border-radius: 2px;
 
-        /* border: none; */
+        border: none;
         /* border-bottom: 1px solid black; */
 
         /* transition: width 0.4s ease-in-out; */
@@ -246,7 +279,7 @@ img {
     
     /* PLACEHOLDER */
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #ffffff;
+        /* color: #ffffff; */
         color: black;
         opacity: 1; /* Firefox */
       }
