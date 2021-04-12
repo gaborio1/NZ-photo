@@ -49,26 +49,29 @@
                     </nav>
                     <div class="search-container">
 
-
-                        <form action="" class="search-bar">
+                        <!-- CODEPEN -->
+                        <!-- <form action="" class="search-bar">
                             <input type="search" name="search" pattern=".*\S.*" required>
                             <button class="search-btn" type="submit">
                                 <span>Search</span>
                             </button>
-                        </form>
+                        </form> -->
 
                         
                         <!-- W3SCHOOLS -->
                         <!-- <form class="example" action="/action_page.php" 
                             <input type="text" placeholder="Search.." name="search2">
+
                             <button type="submit"><i class="fa fa-search "></i></button>
                           </form> -->
 
 
-                        <!-- <form action="">
-                            <input type="text" placeholder="Search page" name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form> -->
+                        <form action="">
+                            <button type="submit" id="submit-btn" class="submit-btn hidden"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search enzee.com" name="search" id="search-input" class="hidden" required>
+                            <button type="" id="default-btn" class="default-btn"><i class="fa fa-search"></i></button>
+                            <button type="" id="close-btn" class="close-btn hidden"><i>X</i></button>
+                        </form>
 
                   </div>
                 </div>  
@@ -83,7 +86,7 @@
                 <h2>capturing precious moments</h2>
             </div>
 
-            <div class="image-container">
+            <div id="image-container" class="image-container">
                 <!-- <img class="mySlides" src="./images/showcase1.jpg"> -->
                 <!-- <img class="mySlides" src="./images/showcase2.jpg"> -->
                 <!-- <img class="mySlides" src="./images/showcase3.jpg"> -->

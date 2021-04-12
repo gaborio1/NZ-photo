@@ -18,7 +18,6 @@ function myFunction() {
   }
 }
 
-
 // FADE IN/OUT GALLERY
 let current = 0,
     slides = document.getElementsByTagName("img");
@@ -30,3 +29,28 @@ setInterval(function() {
   current = (current != slides.length - 1) ? current + 1 : 0;
   slides[current].style.opacity = 1;
 }, 8000);
+
+const defaultButton = document.getElementById("default-btn");
+const submitButton = document.getElementById("submit-btn");
+const closeButton = document.getElementById("close-btn");
+const searchInput = document.getElementById("search-input");
+
+const imageContainer = document.getElementById("image-container");
+
+defaultButton.addEventListener("click", function() {
+    defaultButton.classList.add("hidden");
+    submitButton.classList.remove("hidden");
+    searchInput.classList.remove("hidden");
+    searchInput.focus();
+    closeButton.classList.remove("hidden");
+    imageContainer.classList.add("blurred")
+})
+
+closeButton.addEventListener("click", function() {
+    defaultButton.classList.remove("hidden");
+    submitButton.classList.add("hidden");
+    searchInput.classList.add("hidden");
+    closeButton.classList.add("hidden");
+    imageContainer.classList.remove("blurred");
+
+})

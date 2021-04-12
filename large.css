@@ -40,6 +40,7 @@ img {
     /* width: 100vw; */
     height: 100vh;
     transition: opacity 2s ease-in-out;
+    
   }
   
   img + img { opacity: 0; }
@@ -68,6 +69,11 @@ img {
   
 .hidden {
     display: none;
+}
+
+.blurred {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
 }
 
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -262,16 +268,47 @@ nav {
     /* border-left: 1px solid black; */
 }
     
-    
+button {
+    border: 1px solid red;
+    border: none;
+    color: white;
+    background: transparent;
+    outline: none;
+}  
+
+button.submit-btn, button.close-btn {
+    color: rgba(255, 255, 255, 0.753);
+}
+
+
+
+input {
+    /* border: yellowgreen; */
+    width: 140px;
+    margin: 0px 0px 0px 7px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+::placeholder {
+    /* color: red; */
+    margin: 0px 0px 0px 10px;
+  }
+
+
+
+
 /* EXPANDING SEARCH BUTTON */
 
-.search-bar {
+/* .search-bar {
 	display: flex;
 }
 
 body {
 	background: #f1f1f1;
-	/* height: 100vh; */
 }
 
 .search-bar input,
@@ -365,7 +402,6 @@ body {
 	height: 1px;
 }
 
-/* Active state */
 .search-bar input:focus + .search-btn,
 .search-bar input:valid + .search-btn {
 	background: #2762f3;
@@ -392,9 +428,6 @@ body {
 	body, input {
 		color: #f1f1f1;
 	}
-	/* body {
-		background: #171717;
-	} */
 	.search-bar input {
 		box-shadow: 0 0 0 0.4em #f1f1f1 inset;
 	}
@@ -409,7 +442,7 @@ body {
 }
 
 
-
+ */
 
 
 
