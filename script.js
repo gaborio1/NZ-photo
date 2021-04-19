@@ -41,9 +41,11 @@ defaultButton.addEventListener("click", function() {
     defaultButton.classList.add("hidden");
     submitButton.classList.remove("hidden");
     searchInput.classList.remove("hidden");
-    searchInput.focus();
+    // searchInput.focus();
     closeButton.classList.remove("hidden");
-    imageContainer.classList.add("blurred")
+    imageContainer.classList.add("blurred");
+
+    searchInput.style.width = "140px";
 })
 
 closeButton.addEventListener("click", function() {
@@ -52,5 +54,6 @@ closeButton.addEventListener("click", function() {
     searchInput.classList.add("hidden");
     closeButton.classList.add("hidden");
     imageContainer.classList.remove("blurred");
-
+    
+    searchInput.style.width = "0px";
 })
