@@ -18,17 +18,19 @@ function myFunction() {
   }
 }
 
-// FADE IN/OUT GALLERY
-let current = 0,
-    slides = document.getElementsByTagName("img");
+// NOT IN USE:
 
-setInterval(function() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = 0;
-  }
-  current = (current != slides.length - 1) ? current + 1 : 0;
-  slides[current].style.opacity = 1;
-}, 8000);
+// FADE IN/OUT GALLERY
+// let current = 0,
+//     slides = document.getElementsByTagName("img");
+
+// setInterval(function() {
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.opacity = 0;
+//   }
+//   current = (current != slides.length - 1) ? current + 1 : 0;
+//   slides[current].style.opacity = 1;
+// }, 8000);
 
 const defaultButton = document.getElementById("default-btn");
 const submitButton = document.getElementById("submit-btn");
