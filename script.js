@@ -22,7 +22,7 @@ function myFunction() {
 
 // FADE IN/OUT GALLERY
 // let current = 0,
-//     slides = document.getElementsByTagName("img");
+// slides = document.querySelector(".mySlides");
 
 // setInterval(function() {
 //   for (let i = 0; i < slides.length; i++) {
@@ -30,7 +30,7 @@ function myFunction() {
 //   }
 //   current = (current != slides.length - 1) ? current + 1 : 0;
 //   slides[current].style.opacity = 1;
-// }, 8000);
+// }, 4000);
 
 const defaultButton = document.getElementById("default-btn");
 const submitButton = document.getElementById("submit-btn");
