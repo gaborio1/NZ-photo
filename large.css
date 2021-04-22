@@ -18,6 +18,7 @@ body {
     /* background: wheat; */
     background: rgba(0, 0, 0, 0.807);
     /* background: rgb(0, 0, 0); */
+    /* background: rgb(255, 255, 255); */
 }
 
 h1 {
@@ -52,6 +53,9 @@ p {
     height: 100vh;
 
     /* !!! THIS IS WORKING !!! */
+    /* https://www.w3schools.com/html/html_images_background.asp */
+
+    /* background-image: url('./images/showcase-3 copy.jpg'); */
     background-image: url('./images/showcase-3.jpg');
     /* background-image: url("./images/motion-card-1.jpg"); */
     /* background-repeat: no-repeat; */
@@ -517,14 +521,18 @@ form.example input {
     width: 100%;
     /* max-width: 2275px; */
     height: fit-content;
-    height: 120px;
+    height: 210px;
     margin: auto;
 
     border-top: 1px solid rgba(255, 255, 255, 0.514);
+    /* border-top: 5px solid rgba(0, 0, 0, 0.957); */
     border-bottom: 1px solid rgba(255, 255, 255, 0.514);
+    /* border-bottom: 50px solid rgba(0, 0, 0, 0.998); */
     /* background: rgba(255, 255, 255, 0.192); */
-    background-color: rgba(0, 0, 0, 0.11);   
-    background-color: rgba(0, 0, 0, 0.342);   
+    /* background-color: rgba(0, 0, 0, 0.11);    */
+    /* background-color: rgba(0, 0, 0, 0.342);    */
+    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.313), rgb(0, 0, 0));
     /* width: 300px;
     height: 300px; */
     /* border-radius: 50%; */
@@ -566,10 +574,12 @@ form.example input {
     color: rgba(255, 255, 255, 0.842);
     /* color: #e1bc91cb; */
     /* color: #ffc786; */
+    color: #fdae81;
+
     font-size: 20px;
     font-weight: 300;
     text-transform: capitalize;
-    margin: 70px 0px 0px 0px;
+    margin: 170px 0px 0px 0px;
     letter-spacing: .4rem;
     /* padding-bottom: 20px; */
 }
@@ -579,9 +589,9 @@ h1 .enzee {
     color: #62959c;
     color: #56d2e2;
     /* display: block; */
-    font-weight: 500;
-    font-size: 60px;
-    letter-spacing: .2rem;
+    font-weight: 900;
+    font-size: 210px;
+    /* letter-spacing: .4rem; */
 } 
 
 
@@ -592,6 +602,7 @@ h1 .photography {
     margin: 0px 0px 0px 0px;
     font-size: 25px;
     letter-spacing: .5rem;
+    /* letter-spacing: 2.5rem; */
 } 
 
 
@@ -614,20 +625,21 @@ h1 .photography {
 }
 
 .row {
-    display: flex;
+    /* display: flex; */
     /* flex-direction: row; */
     /* align-items: center; */
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
     max-width: 1500px;
-    margin: 25px auto;
+    margin: 50px auto;
     /* border: 1px solid green; */
-    background: black;
-    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.574);
+    /* border-radius: 10px; */
 }
 
 .row.horizontal {
     flex-direction: row-reverse;
+    background: rgba(255, 255, 255, 0.854);
 }
 
 .card-img {
@@ -687,6 +699,38 @@ hr.style-one {
     color: black;
     color: white;
     padding: 5px 30px;
+}
+
+.info-div {
+    /* z-index: 1; */
+    border: 1px solid rgba(255, 166, 0, 0.382);
+    /* border: 1px solid rgba(163, 163, 163, 0.759); */
+    /* border: 1px solid rgba(0, 0, 0, 0.759); */
+
+    /* WHEN HORIZINTAL */
+    /* width: 100%; */
+
+    width: 600px;
+    height: 80px;
+    position: relative;
+    top: -300px;
+    left: -200px;
+    background-color: rgba(0, 0, 0, 0.342);   
+    /* left: -400px; */
+
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(-90deg);
+
+}
+
+.info-div-content span.category {
+    margin-left: 2rem;
+    font-size: 60px;
+    font-weight: 300;
+    color: rgb(212, 152, 13);
+    /* color: #62959c; */
+    color: #56d2e2;
+    /* color: #ffffff; */
 }
 
 /* ========== PORTRAIT LAYOUT ========== */
