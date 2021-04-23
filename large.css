@@ -17,6 +17,7 @@ body {
     font-family: 'Roboto', sans-serif;
     /* background: wheat; */
     background: rgba(0, 0, 0, 0.807);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.313)); */
     /* background: rgb(0, 0, 0); */
     /* background: rgb(255, 255, 255); */
 }
@@ -503,43 +504,38 @@ form.example input {
     border: 1px solid green;
     width: 20px;
 } */
-    
-
-
-
-
-
-
-
-
+ 
 .title-div {
 /* !!! !!! */
     position: absolute;
     z-index: 1;
 
-    bottom: 50px;
+    /* bottom: 25px; */
     width: 100%;
     /* max-width: 2275px; */
-    height: fit-content;
-    height: 210px;
+    /* height: fit-content; */
+    /* height: 210px; */
+
+    height: 100%;
     margin: auto;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.514);
-    /* border-top: 5px solid rgba(0, 0, 0, 0.957); */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.514);
-    /* border-bottom: 50px solid rgba(0, 0, 0, 0.998); */
+    /* border-top: 1px solid rgba(255, 255, 255, 0.514); */
+    /* border-top: 3px solid rgba(0, 0, 0, 0.957); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.514); */
+    /* border-bottom: 25vh solid rgba(255, 166, 0, 0.752); */
+    /* border-bottom: 2vh solid rgb(0, 0, 0); */
     /* background: rgba(255, 255, 255, 0.192); */
     /* background-color: rgba(0, 0, 0, 0.11);    */
     /* background-color: rgba(0, 0, 0, 0.342);    */
-    background-image: linear-gradient(red, yellow);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.313), rgb(0, 0, 0));
+    /* background-image: linear-gradient(red, yellow); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
     /* width: 300px;
     height: 300px; */
     /* border-radius: 50%; */
     /* border-radius: 10px 30px 10px 30px; */
 
     display: flex;
-    /* align-items: center; */
+    align-items: flex-end;
     justify-content: center;
 
     /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -550,9 +546,10 @@ form.example input {
 
 .title-div-content {
     width: 90%;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     /* border: 3px solid orange; */
     display: flex;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
 }
 
@@ -588,9 +585,13 @@ form.example input {
 h1 .enzee {
     color: #62959c;
     color: #56d2e2;
+    color: rgba(255, 166, 0, 0.752);
     /* display: block; */
     font-weight: 900;
     font-size: 210px;
+    /* font-size: 12rem; */
+    /* RESPONSIVE TEXT */
+    /* font-size: 12vw; */
     /* letter-spacing: .4rem; */
 } 
 
@@ -630,7 +631,7 @@ h1 .photography {
     /* align-items: center; */
     justify-content: space-around;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 50px auto;
     /* border: 1px solid green; */
     background: rgba(0, 0, 0, 0.574);
