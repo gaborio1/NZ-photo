@@ -30,6 +30,10 @@ h2 {
     font-weight: 200;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 p {
     font-size: 15px;
     font-weight: 100;
@@ -350,11 +354,11 @@ input[type=text] {
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.514); */
     /* border-bottom: 25vh solid rgba(255, 166, 0, 0.752); */
     /* border-bottom: 2vh solid rgb(0, 0, 0); */
-    /* background: rgba(255, 255, 255, 0.192); */
-    /* background-color: rgba(0, 0, 0, 0.11);    */
-    /* background-color: rgba(0, 0, 0, 0.342);    */
-    /* background-image: linear-gradient(red, yellow); */
+    background: rgba(255, 255, 255, 0.192);
+    background: #56d2e213;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
+
     /* width: 300px;
     height: 300px; */
     /* border-radius: 50%; */
@@ -513,8 +517,8 @@ h1 .photography {
 }
 
 .portrait-text-container {
-    text-align: center;
-    border-left: 5px solid black;
+    text-align: left;
+    border-left: 1px solid black;
     padding: 1rem;
 }
 
@@ -533,7 +537,7 @@ img.portrait-style {
 /* LANDSCAPE CONTAINER */
 .landscape-container {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
 
     display: flex;
     flex-direction: column;
@@ -541,7 +545,7 @@ img.portrait-style {
     justify-content: space-around;
 
     /* border: 3px solid rgb(59, 72, 190); */
-    margin: 20px;
+    margin: 75px;
 }
 
 .landscape-img-container, .landscape-text-container {
@@ -551,9 +555,14 @@ img.portrait-style {
     /* display: flex;
     align-items: center;
     justify-content: center;     */
-    text-align: center;
+    /* text-align: center; */
 
     /* border: 5px solid black; */
+}
+
+.landscape-text-container {
+    border-left: 1px solid black;
+    padding: 1rem;
 }
 
 img.landscape-style {
@@ -704,11 +713,12 @@ img.landscape-style {
     /* top: -400px; */
     width: 100%;
     height: inherit;
-    background: rgba(0, 0, 0, 0.457);
-    background: rgba(0, 0, 0, 0.313);
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.505)); */
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.903));
-    border-bottom: 10px solid black;
+    /* background: rgba(0, 0, 0, 0.457); */
+    /* background: rgba(0, 0, 0, 0.129); */
+    background: #56d2e213;
+    /* background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.457)); */
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.8), black);
+    /* border-bottom: 10px solid black; */
     /* border-top: 90px solid rgba(0, 0, 0, 0); */
 }
 
