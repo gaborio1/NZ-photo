@@ -15,10 +15,9 @@
 body {
     /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
     font-family: 'Roboto', sans-serif;
-    background: rgba(0, 0, 0, 0.807);
+    /* background: rgba(0, 0, 0, 0.807); */
     /* background: rgba(0, 0, 0, 0.074); */
-    background: rgb(255, 255, 255);
-    background: rgba(4, 40, 44, 0.163);
+    /* background: rgb(255, 255, 255); */
 }
 
 h1 {
@@ -261,15 +260,20 @@ nav {
 
 .nav-link.active {
     border-bottom: 2px solid white;
-    color: white;
+    color: rgba(255, 255, 255, 0.753);
     /* color: rgba(255, 166, 0, 0.765); */
+}
+
+.nav-link.active:hover {
+    border-bottom: 2px solid white;
+    color: white;
 }
 
 .nav-link:hover {
     border-bottom: 2px solid white;
-    border-bottom: 2px solid rgb(255, 166, 0);;
+    border-bottom: 2px solid rgb(255, 166, 0);
     color: white;
-    color: rgb(255, 166, 0);;
+    color: rgb(255, 166, 0);
 }
     
 
@@ -441,6 +445,7 @@ h1 .photography {
 /* DESIGN 2 */
 
 .main-coloumn {
+    /* z-index: -1; */
     width: 90%;
     max-width: 1200px;
     /* height: 1000px; */
@@ -450,46 +455,76 @@ h1 .photography {
     align-items: center;
     justify-content: space-around;
 
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
+    /* background: rgba(0, 0, 0, 0.204); */
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.211), rgba(0, 0, 0, 0)); */
+    /* border-left: 15px solid rgba(0, 0, 0, 0.218); */
+    /* border-right: 1px solid black; */
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 
 /* PORTRAIT CONTAINER */
 .portrait-container {
+    z-index: -1;
     width: 100%;
-    height: fit-content;
+    height: 1000px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 
-    border: 3px solid brown;
-    margin: 10px;
+    /* border: 3px solid rgb(19, 104, 110); */
+    margin: 20px;
 }
 
 .portrait-block {
-    /* width: 300px;
-    height: 500px; */
+    width: 90%;
+    height: 75%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 
-    border: 3px solid olive;
-    margin: 10px;
+    /* border: 3px solid olive; */
+    margin: 10px 10px 150px 10px;
+}
+
+.portrait-reverse {
+    flex-direction: column-reverse;
+    margin: 150px 10px 10px 10px;
 }
 
 .portrait-img-container, .portrait-text-container {
-    width: fit-content;
+    position: relative;
+
+    width: 350px;
     height: fit-content;
 
-    border: 3px solid black;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    
+
+    /* border: 5px solid black; */
+}
+
+.portrait-text-container {
+    text-align: center;
+    border-left: 5px solid black;
+    padding: 1rem;
 }
 
 img.portrait-style {
-    width: 330px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.portrait-reverse .portrait-img-container {
+    margin-top: 100px;
 }
 
 
@@ -505,19 +540,25 @@ img.portrait-style {
     align-items: center;
     justify-content: space-around;
 
-    border: 3px solid brown;
-    margin: 10px;
+    /* border: 3px solid rgb(59, 72, 190); */
+    margin: 20px;
 }
 
 .landscape-img-container, .landscape-text-container {
-    width: fit-content;
+    width: 750px;
     height: fit-content;
 
-    border: 3px solid black;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;     */
+    text-align: center;
+
+    /* border: 5px solid black; */
 }
 
 img.landscape-style {
-    width: 700px;
+    width: 100%;
+    border-radius: 3px;
 }
 
 
@@ -538,7 +579,7 @@ img.landscape-style {
     /* justify-content: space-around; */
     width: 100%;
     height: fit-content;
-    margin: 45px auto;
+    /* margin: 45px auto; */
     /* border: 3px solid red; */
 }
 
@@ -560,13 +601,13 @@ img.landscape-style {
     border-radius: 3px;
 }
 
-.row.horizontal {
+/* .row.horizontal { */
     /* flex-direction: row-reverse; */
     /* background: rgba(255, 255, 255, 0.854); */
     /* background: rgba(0, 0, 0, 0.471); */
     /* background: rgb(0, 0, 0); */
     /* border: 3px solid rgb(255, 255, 255); */
-}
+/* } */
 
 .card-img {
     margin: .5rem;
