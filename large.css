@@ -411,10 +411,10 @@ input[type=text] {
 
       
 h1 .enzee {
-    color: #62959c;
-    color: #56d2e2;
-    color: rgba(255, 166, 0, 0.752);
-    color: rgb(255, 166, 0);
+    /* color: #62959c; */
+    /* color: #56d2e2; */
+    /* color: rgba(255, 255, 255, 0.108); */
+    color: rgba(255, 166, 0, 0.855);
     /* display: block; */
     font-weight: 900;
     font-size: 210px;
@@ -579,6 +579,103 @@ img.landscape-style {
     border-radius: 3px;
 }
 
+/* AERIAL CONTAINER */
+.feature-container {
+    width: 1200px;
+    /* height: 600px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background: rgba(128, 128, 128, 0.615); */
+    /* border: 3px solid lightcoral; */
+
+    padding-top: 50px;
+    margin: 75px;
+}
+
+.slice-container {
+    width: 95%;
+    height: 33%;
+
+    display: flex;
+
+    /* background: #56d2e213; */
+    
+
+    margin: .5px;
+    margin: 5px;
+    /* border: 3px solid mediumpurple; */
+}
+
+.slice-container-1 {
+    justify-content: left;
+    /* justify-content: flex-end; */
+}
+
+.slice-container-2 {
+    justify-content: center;
+}
+
+.slice-container-3 {
+    justify-content: flex-end;
+    /* justify-content: left; */
+}
+
+.slice-img {
+    z-index: 1;
+    width: 90%;
+    height: 155px;
+    height: 180px;
+    border-radius: 3px;
+}
+
+.slice-img-cover {
+    position: relative;
+    width: 100%;
+    height: inherit;
+
+    background: rgba(0, 0, 0, 0.245);
+    background: #04363b50;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.108), rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to left, transparent,rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.8), black); */
+    /* border: 1px solid black; */
+    border-radius: 3px;
+}
+
+.slice-img-1 {
+    background-image: url("./images/aerial-slice-1.png");
+    background-size: cover;
+}
+
+.slice-img-2 {
+    background-image: url("./images/aerial-slice-2.png");
+    background-size: cover;
+}
+
+.slice-img-3 {
+    background-image: url("./images/aerial-slice-3.png");
+    background-size: cover;
+}
+
+.feature-container .info-div-slice {
+    z-index: 1;
+    position: relative;
+    top: -300px;
+    left: 470px;
+    /* left: -400px; */
+}
+
+/* img.slice {
+    width: 100%;
+    height: 150px;
+    border-radius: 3px;
+
+    margin-bottom: 0px;
+
+    border: 3px solid black;
+} */
 
 
 
