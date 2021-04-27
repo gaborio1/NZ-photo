@@ -518,8 +518,9 @@ h1 .photography {
 .portrait-text-container {
     text-align: left;
     color: rgba(0, 0, 0, 0.724);
-    border-left: 1px solid rgba(0, 0, 0, 0.272);
+    border-left: 2px solid rgba(0, 0, 0, 0.272);
     padding: 1rem;
+    margin-left: 1rem;
 }
 
 h3.category-info-title {
@@ -569,8 +570,9 @@ img.portrait-style {
 
 .landscape-text-container {
     color: rgba(0, 0, 0, 0.724);
-    border-left: 1px solid rgba(0, 0, 0, 0.279);
+    border-left: 2px solid rgba(0, 0, 0, 0.279);
     padding: 1rem;
+    margin-left: 1rem;
 }
 
 img.landscape-style {
@@ -578,6 +580,54 @@ img.landscape-style {
     /* border: 1px solid rgba(0, 0, 0, 0.286); */
     border-radius: 3px;
 }
+
+
+/* MOSAIC CONTAINER */
+.mosaic-container {
+    background-image: url("./images/mosaic-wide.png");
+    background-size: cover;
+    width: 100vw;
+    /* box-sizing: content-box; */
+    /* width: 1200px; */
+    /* height: 585px;
+    height: 645px; */
+
+    /* !!! THIS WORKS FINE !!! */
+    height: 50vh;
+    min-height: 550px;
+
+    filter: grayscale(.5) contrast(150%);  
+    /* filter: grayscale(.25) blur(1px) opacity(0.75);   */
+   
+    /* border: 5px solid black; */
+    border-top: 45px solid grey;
+    border-bottom: 5px solid grey;
+    margin: 90px 0px 90px 0px;
+}
+/* 
+.mosaic-container img {
+    width: 100%;
+    height: auto;
+  
+} */
+
+/* 
+.mosaic-1 {
+    background-image: url("./images/mosaic-2.jpg");
+    width: 50%;
+    background-size: cover;
+    border: 3px solid rgb(0, 115, 209);
+}
+
+.mosaic-2 {
+    background-image: url("./images/mosaic-1.jpg");
+    width: 50%;
+    background-size: cover;
+    border: 3px solid rgb(30, 229, 30);
+} */
+
+
+
 
 /* AERIAL CONTAINER */
 .feature-container {
