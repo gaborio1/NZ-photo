@@ -250,7 +250,7 @@ nav {
     text-decoration: none;
     color: black;
     color: rgba(255, 255, 255, 0.753);
-    color: rgba(255, 166, 0, 0.765);
+    /* color: rgba(255, 166, 0, 0.765); */
     letter-spacing: .04rem;
     font-size: 15px;
     font-weight: 300;
@@ -273,9 +273,9 @@ nav {
 
 .nav-link:hover {
     border-bottom: 2px solid white;
-    border-bottom: 2px solid rgb(255, 166, 0);
+    /* border-bottom: 2px solid rgb(255, 166, 0); */
     color: white;
-    color: rgb(255, 166, 0);
+    /* color: rgb(255, 166, 0); */
 }
     
 
@@ -335,76 +335,57 @@ input[type=text] {
  
 .title-div {
 /* !!! !!! */
-    position: absolute;
     z-index: 1;
+    position: absolute;
+    /* top: 200px; */
+    bottom: 75px;
 
-    /* bottom: 25px; */
+
+    
+
     width: 100%;
-    /* max-width: 2275px; */
-    /* height: fit-content; */
-    /* height: 210px; */
-
-    height: 100%;
+    height: fit-content;
+    height: 110px;
     margin: auto;
 
-    /* border-top: 1px solid rgba(255, 255, 255, 0.514); */
-    /* border-top: 3px solid rgba(0, 0, 0, 0.957); */
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.514); */
-    /* border-bottom: 25vh solid rgba(255, 166, 0, 0.752); */
-    /* border-bottom: 2vh solid rgb(0, 0, 0); */
-    background: rgba(255, 255, 255, 0.192);
-    background: #56d2e213;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
-    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
-
-    /* width: 300px;
-    height: 300px; */
-    /* border-radius: 50%; */
-    /* border-radius: 10px 30px 10px 30px; */
+   
+    background: rgba(0, 0, 0, 0.192);
+    /* background: #56d2e213; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)); */
+    /* background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.8), rgb(0, 0, 0)); */
 
     display: flex;
     align-items: flex-end;
     justify-content: center;
 
-    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    border-top: 1px solid rgb(119, 119, 119);
+    border-bottom: 1px solid rgb(131, 131, 131);
           
 }
 
+
+
 .title-div-content {
-    width: 90%;
-    /* max-width: 1500px; */
+    width: 95%;
     /* border: 3px solid orange; */
     display: flex;
     /* flex-direction: row-reverse; */
     justify-content: space-between;
 }
 
-.title-div h1 {
-    color: rgba(255, 255, 255, 0.514);
-    /* color: rgb(0, 0, 0); */
-    /* font-size: 45px; */
-    font-weight: 300;
-    text-transform: capitalize;
-    /* text-align: center; */
-    text-align: left;
-    /* padding: 25px; */
-
-    display: flex;
-    flex-direction: column;
-}
-
 .title-div h2 {
     color: rgba(255, 255, 255, 0.842);
     /* color: #e1bc91cb; */
     /* color: #ffc786; */
-    color: #fdae81;
+    /* color: #fdae81; */
 
     font-size: 20px;
     font-weight: 300;
     text-transform: capitalize;
-    margin: 170px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;
     letter-spacing: .4rem;
     /* padding-bottom: 20px; */
 }
@@ -412,12 +393,13 @@ input[type=text] {
       
 h1 .enzee {
     /* color: #62959c; */
-    /* color: #56d2e2; */
+    color: #56d2e2;
     /* color: rgba(255, 255, 255, 0.108); */
-    color: rgba(255, 166, 0, 0.855);
+    /* color: rgba(255, 166, 0, 0.855); */
+    /* text-transform: capitalize; */
     /* display: block; */
     font-weight: 900;
-    font-size: 210px;
+    font-size: 105px;
     /* font-size: 12rem; */
     /* RESPONSIVE TEXT */
     /* font-size: 12vw; */
@@ -427,14 +409,19 @@ h1 .enzee {
 
 h1 .photography {
     color: #c19277;
-    color: #fdae81;
+    /* color: #fdae81; */
+    /* color: rgb(0, 0, 0); */
     /* display: block; */
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
     font-size: 25px;
     letter-spacing: .5rem;
     /* letter-spacing: 2.5rem; */
 } 
 
+h2.slogan {
+    color: orange;
+    color: #fdae81;
+}
 
 
 
@@ -493,7 +480,7 @@ h1 .photography {
 
     margin: 10px 10px 150px 10px;
     
-    border: 3px solid olive;
+    /* border: 3px solid olive; */
 }
 
 .portrait-column--non-reverse {
@@ -639,17 +626,6 @@ img.landscape-style {
     background-size: cover;
     border: 3px solid rgb(30, 229, 30);
 } */
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* DESIGN 1 */
