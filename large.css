@@ -65,20 +65,21 @@ p {
     /* !!! THIS IS WORKING !!! */
     /* https://www.w3schools.com/html/html_images_background.asp */
 
-    /* background-image: url('./images/showcase-3 copy.jpg'); */
-    background-image: url('./images/showcase-3.jpg');
+    background-image: url('./images/showcase-3 copy.jpg');
+    /* background-image: url('./images/showcase-3.jpg'); */
     /* background-image: url("./images/motion-card-1.jpg"); */
-    /* background-repeat: no-repeat; */
     /* !!! THIS WILL PREVENT IT FROM SCROLLING !!! */
     /* background-attachment: fixed;   */
     background-size: cover;
 }
 
 /* Style the navbar */
-#header {
+
+/* !!!!! THIS PREVENTED DROPDOWN FROM SHOWING !!!!! */
+
+/* #header {
     overflow: hidden;
-    /* background-color: #333; */
-  }
+  } */
 
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
@@ -136,6 +137,7 @@ header {
     height: 45px;
     margin-left: auto;
     margin-right: auto;
+
     /* border-bottom: 1px solid black; */
     /* color: white; */
 }
@@ -228,6 +230,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /*     
@@ -236,8 +239,8 @@ nav {
 } */
     
 .nav-link {
-    display: block;
-    float: left;
+    /* display: block; */
+    /* float: left; */
     width: 130px;
     text-align: center;
     text-decoration: none;
@@ -268,7 +271,82 @@ nav {
     color: white;
     color: rgb(255, 166, 0);
 }
-    
+
+
+
+
+
+
+
+
+/*  DROPDOWN TEST */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
 
 
 
@@ -334,9 +412,9 @@ input[type=text] {
     margin: auto;
 
    
-    background: rgba(255, 255, 255, 0.192);
+    /* background: rgba(255, 255, 255, 0.192); */
     background: #56d2e213;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)); */
     background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
 
     display: flex;
